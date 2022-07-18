@@ -1,5 +1,4 @@
-#pragma once
-
+#include "typewise-alert.h"
 
 class IAlert {
   public:
