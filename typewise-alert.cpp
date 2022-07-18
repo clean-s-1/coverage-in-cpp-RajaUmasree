@@ -1,5 +1,6 @@
 #include "typewise-alert.h"
 #include "alert.h"
+#include "breach.h"
 
 #include <stdio.h>
 
