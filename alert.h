@@ -1,4 +1,5 @@
 #include "typewise-alert.h"
+#include <bits/stdc++.h>
 
 class IAlert {
   public:
@@ -10,4 +11,4 @@ class Alert: public IAlert  {
   public:
      void sendToController(BreachType breachType);
      void sendToEmail(BreachType breachType);
-}
+};
