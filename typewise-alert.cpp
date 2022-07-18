@@ -5,11 +5,10 @@
 #include <stdio.h>
 
 void checkAndAlert(
-    AlertTarget alertTarget, BatteryCharacter batteryChar, double temperatureInC) {
+    AlertTarget alertTarget, Coolingtype* coolingtypeobj, double temperatureInC) {
 
    Breach breachobj;
-  BreachType breachType = breachobj.classifyTemperatureBreach(
-    batteryChar.coolingType, temperatureInC
+  BreachType breachType = breachobj.classifyTemperatureBreach(coolingtypeobj, temperatureInC
   );
   
   IAlert *alert = new Alert();
