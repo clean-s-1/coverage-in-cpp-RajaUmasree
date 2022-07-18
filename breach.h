@@ -1,5 +1,6 @@
 #pragma once
 
+#include <iostream>
 #include <bits/stdc++.h>
 #include "typewise-alert.h"
 
@@ -8,7 +9,7 @@ class Coolingtype {
          double lowerLimit;
          double upperLimit;
     public:
-        Coolingtype(int lowlimit, int highlimit) : lowerLimit{lowlimit}, upperLimit{highlimit} {}
+        Coolingtype(double lowlimit, double highlimit) : lowerLimit{lowlimit}, upperLimit{highlimit} {}
         
         double getlowlimit() {
             return lowerLimit;
