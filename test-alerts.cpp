@@ -2,14 +2,16 @@
 
 #include "test/catch.hpp"
 #include "typewise-alert.h"
+#include "breach.h"
 
 TEST_CASE(" Case 1: infers the breach according to limits") {
-  REQUIRE(inferBreach(12, 20, 30) == TOO_LOW);
+  Breach obj;
+  REQUIRE(obj.inferBreach(12, 20, 30) == TOO_LOW);
 }
 TEST_CASE("Case 2: infers the breach according to limits") {
-  REQUIRE(inferBreach(32, 30, 40) == NORMAL);
+  REQUIRE(obj.inferBreach(32, 30, 40) == NORMAL);
 }
 TEST_CASE("Case 3: infers the breach according to limits") {
-  REQUIRE(inferBreach(42, 30, 35) == TOO_HIGH);
+  REQUIRE(obj.inferBreach(42, 30, 35) == TOO_HIGH);
 }
 
