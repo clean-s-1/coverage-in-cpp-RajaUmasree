@@ -32,5 +32,5 @@ BreachType Breach::classifyTemperatureBreach(
       upperLimit = 40;
       break;
   }
-  return inferBreach(temperatureInC, lowerLimit, upperLimit);
+  return this->inferBreach(temperatureInC, lowerLimit, upperLimit);
 }
