@@ -18,9 +18,9 @@ typedef enum {
 } AlertTarget;
 
 typedef struct {
-  CoolingType coolingType;
+  Coolingtype coolingType;
   char brand[48];
 } BatteryCharacter;
 
 void checkAndAlert(
-  AlertTarget alertTarget, BatteryCharacter batteryChar, double temperatureInC);
+  AlertTarget alertTarget, Coolingtype* coolingtypeobj, double temperatureInC);
