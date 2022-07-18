@@ -24,7 +24,4 @@ void Alert::sendToEmail(BreachType breachType) {
       }
       
  }
-  
-  
-  
-}
+ 
