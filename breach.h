@@ -26,12 +26,12 @@ class Passivecooling: public Coolingtype {
 
 class Activecooling: public Coolingtype {
     public:
-        activecooling() : Coolingtype(0,20) {}
+        activecooling() : Coolingtype(30,40) {}
 };
 
 class Normalcooling: public Coolingtype {
     public:
-        passivecooling() : Coolingtype(0,20) {}
+        passivecooling() : Coolingtype(20,28) {}
 };
 
 
